@@ -47,7 +47,8 @@ def create_audio(
         temp_clone_voice_path = temp_clone_voice.name
 
     try:
-        text = text.replace("*", "").replace("\n", "").replace('"', "")
+        text = text.replace("*", "").replace("\n", "").replace('"', "").replace("...",".")
+        text = text.replace("\\", "").replace("nn", "")
         text = text.replace('.', ';\n')
         audio = tts.tts(
             text=text,
