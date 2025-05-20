@@ -16,13 +16,13 @@ Ative a venv pelo Shell do vscode:
 intalar dependencias:
 
 
-pip install torch TTS
 
 
 problema com o torch:
 
 python -m pip install --upgrade pip setuptools wheel
 
+pip install torch TTS
 
 pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
 
