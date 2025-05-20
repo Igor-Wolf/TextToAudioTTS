@@ -16,7 +16,7 @@ Ative a venv pelo Shell do vscode:
 intalar dependencias:
 
 
-pip install -r requirements.txt
+pip install torch TTS
 
 
 problema com o torch:
@@ -28,6 +28,10 @@ pip install torch torchvision torchaudio --index-url https://download.pytorch.or
 
 python -c "import torch; print(torch.cuda.is_available())"
 
+pip install -r requirements.txt
+
+
+pip install fastapi[standard]
 
 fazer rodar a fastapi:
 
